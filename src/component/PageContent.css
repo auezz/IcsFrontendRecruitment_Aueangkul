@@ -1,0 +1,121 @@
+.page-content{
+    /* position: absolute;
+    left: 100px;
+    top: 60px;
+    height: 100vh;
+    width: 100vw;
+    padding: 20px; */
+    padding-top: 60px;
+    padding-left: 100px;
+}
+
+.content-body{
+    padding: 30px;
+}
+
+.page-input{
+   position: absolute;
+   right: 30px;
+}
+
+.page-input select{
+    border-radius: 30px;
+    border: 1px solid #134B8A;
+}
+.input-group input{
+    border-radius: 30px;
+    border: 1px solid #134B8A;
+    border-right: unset;
+}
+
+.input-group-text{
+    border-radius: 30px;
+    background-color: #FFFFFF;
+    color: darkgray;
+    border: 1px solid #134B8A;
+}
+
+.restaurant-content{
+    margin-top: 30px;
+    /* display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; */
+    justify-content: center;
+}
+
+.restaurant-content .card{
+    width:  400px;
+    padding: 15px;
+    margin: 5px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+}
+.card-head{
+    justify-content: center;
+}
+.card-head img{
+    width: 60px !important;
+    height: 60px !important;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+
+.res-info .res-name{
+    font-weight: bold;
+}
+
+.res-info .res-time{
+    align-items: center;
+    width: 90%;
+}
+
+.res-rating{
+    align-items: center;
+    color: #134B8A;
+}
+
+.res-pic{
+    margin-top: 10px;
+    justify-content: center;
+}
+
+.res-pic img{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.res-pic img:nth-child(1){
+    border-radius: 10px 0 0 10px;
+}
+
+.res-pic img:nth-child(3){
+    border-radius: 0 10px 10px 0;
+}
+
+.pagination{
+    justify-content: center;
+}
+
+.pagination div{
+    border: 1px solid #9E9E9E;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.pagination div:nth-child(2){
+    background-color: #134B8A;
+    color: white;
+    font-size: 16px;
+}
+
+@media (max-width: 1400px){
+    .restaurant-content .card{
+        width: 385px;
+    }
+}
