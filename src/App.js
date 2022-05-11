@@ -120,15 +120,13 @@ function App() {
         <div className="App">
             <Sidebar/>
             <Header/>
-            {screen.width>500?
-            <PageContent restaurant={restaurant} 
+           <PageContent restaurant={restaurant} 
                 itemLength={itemLength}
                 currentPage={pageSelect}
                 onPageChange={onPageChange}
                 onSelectChange={onSelectChange}
                 onSearch={onSearch}
-            />:null
-            } 
+            />
             
 
             

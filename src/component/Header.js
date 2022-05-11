@@ -3,6 +3,9 @@ import './Header.css';
 export default function Header() {
   return (
     <div className='page-header'>
+        <div className="web-icon d-none">
+            <img src="./img/image 3.png" alt="" />
+        </div>
         <div className="header-content">
             <div className="d-flex gap-3">
                 <div className="user-noti me-3">
