@@ -1,22 +1,4 @@
-.page-content{
-    /* position: absolute;
-    left: 100px;
-    top: 60px;
-    height: 100vh;
-    width: 100vw;
-    padding: 20px; */
-    padding-top: 60px;
-    padding-left: 100px;
-}
 
-.content-body{
-    padding: 30px;
-}
-
-.page-input{
-   position: absolute;
-   right: 30px;
-}
 
 .page-input select{
     border-radius: 30px;
@@ -64,6 +46,7 @@
 
 .res-info .res-name{
     font-weight: bold;
+    white-space: nowrap;
 }
 
 .res-info .res-time{
@@ -114,8 +97,227 @@
     font-size: 16px;
 }
 
-@media (max-width: 1400px){
+.page-disabled{
+    cursor: unset;
+    background-color: darkgray;
+}
+
+@media (min-width: 500px){
+    .page-head{
+        flex-direction: column;
+    }
+    .page-input{
+        position: unset;
+        right: unset;
+        margin-top: 10px;
+        width: unset !important;
+    }
+    .header-content{
+        left: 60%;
+    }
     .restaurant-content .card{
-        width: 385px;
+        width: 230px;
+    }
+    .card-head{
+        flex-direction: column !important;
+    }
+    .res-time{
+        gap: 0 !important;
+        white-space: nowrap;
+    }
+    .res-subinfo{
+        gap: 0.5rem !important;
+        flex-direction: column;
+    }
+
+    .res-pic img{
+        width: 70px;
+        height: 60px;
+    }
+    .page-content{
+        padding: 100px 0 0 0;
+    }
+    .content-body{
+        padding: 10px;
+    }
+    .side-bar{
+        display: none;
     }
 }
+@media (min-width: 600px){
+    .header-content{
+        left: 70%;
+    }
+}
+@media (min-width: 700px){
+    .page-input{
+        position: absolute;
+        right: 30px;
+        margin-top: unset;
+    }
+    .header-content{
+        left: 75%;
+    }
+    .page-input{
+        width: unset !important;
+    }
+    .page-content{
+        padding-top: 60px;
+        padding-left: 100px;
+    }
+    .side-bar{
+        display: block;
+    }
+    .content-body{
+        padding: 30px;
+    }
+    .restaurant-content .card{
+        width: 205px;
+    }
+    .card-head img {
+        width: 70px !important;
+        height: 70px !important;
+    }
+    .res-pic img{
+        width: 60px;
+        height: 55px;
+    }
+    .card-head{
+        flex-direction: column !important;
+        gap: 0.5rem !important;
+    }
+    .res-name{
+        margin-top: 10px;
+        display: inline-flex !important;
+    }
+    .res-subinfo{
+        flex-direction: column;
+        gap: 0.5rem !important;
+    }
+    .res-time{
+        display: inline-flex !important;
+        white-space: nowrap;
+        gap: 0 !important;
+    }
+    .res-rating{
+        display: inline-flex !important;
+
+    }
+
+}
+
+@media (min-width: 800px){
+    .page-head{
+        flex-direction: column !important;
+    }
+    .page-input{
+        width: 50%;
+    }
+
+}
+
+
+@media (min-width: 900px){
+    .restaurant-content .card{
+        width: 240px;
+    }
+    .res-pic{
+        align-self: center;
+    }
+    .res-pic img{
+        width: 75px;
+        height: 70px;
+    }
+    /* .res-info{
+        display: flex !important;
+    } */
+    .res-name,
+    .res-time,
+    .res-rating{
+        display: flex !important;
+    }
+    .res-info .gap-3{
+        flex-direction: column;
+        gap: 0.5rem !important;
+    }
+    
+
+}
+
+@media (min-width: 1000px){
+    .restaurant-content .card{
+        width: 280px;
+    }
+    .card-head{
+        flex-direction: unset !important;
+        gap: 1rem !important;
+    }
+    .res-pic img{
+        width: 85px;
+        height: 70px;
+    }
+    .res-time{
+        gap: 0.5rem !important;
+    }
+}
+
+@media (min-width: 1000px){
+    .restaurant-content .card{
+        width: 275px;
+    }
+    .res-pic img{
+        width: 80px;
+        height: 80px;
+    }
+
+}
+@media (min-width: 1200px){
+    .restaurant-content .card{
+        width: 340px;
+    }
+    .res-pic img{
+        width: 100px;
+        height: 100px;
+    }
+    .res-subinfo{
+        flex-direction: unset !important;
+    }
+
+}
+
+@media (min-width: 1300px){
+    .restaurant-content .card{
+        width: 370px;
+    }
+    .res-pic img{
+        width: 110px;
+        height: 110px;
+    }
+    .res-subinfo{
+        flex-direction: unset !important;
+    }
+
+}
+
+@media (min-width: 1400px){
+    .restaurant-content .card{
+        width: 400px;
+    }
+    .res-pic img{
+        width: 120px;
+        height: 120px;
+    }
+}
+@media (min-width: 1500px){
+    .restaurant-content .card{
+        width: 430px;
+    }
+    .res-pic img{
+        width: 130px;
+        height: 130px;
+    }
+}
+
+
+
+
